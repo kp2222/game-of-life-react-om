@@ -1,0 +1,15 @@
+/* some style */
+table {
+    border: none;
+    border-collapse: collapse;
+    font-size: 10px;
+                         
+}
+table td {
+    height: 30px;
+    width: 30px;
+}
+
+body {
+}
+
