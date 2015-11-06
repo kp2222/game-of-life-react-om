@@ -1,4 +1,16 @@
 /* some style */
+
+html {
+    min-height: 100%;
+    background: #1C1C1C;
+    background-size: cover;
+    color: #8B0000;
+}
+
+table {
+    margin: auto
+}
+
 table {
     border: none;
     border-collapse: collapse;

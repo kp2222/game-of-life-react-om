@@ -41,13 +41,13 @@
                  (vec (doall(map-indexed (fn [col-index col] (val-for-next-generation [row-index col-index])) row))))
                (:world @app-state)))))
 
-(js/setInterval (fn[] (do (println "progressing world!") (swap! app-state assoc :world (progress-world)))) 50)
+(js/setInterval (fn[] (do (println "progressing world!") (swap! app-state assoc :world (progress-world)))) 100)
 
 
 
 ;; OM VIEW STUFF!!
 (defn render-cell [val]
-  (if (= val 0) "." "*"))
+  (if (= val 0) "." "O"))
 
 (defn world-view [data owner]
   (reify
